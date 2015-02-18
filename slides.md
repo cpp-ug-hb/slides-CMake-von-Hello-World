@@ -1,6 +1,6 @@
 class: center, middle
 
-# CMake von Hello World nach…
+# CMake von Hello World zum <br> modularen Softwaresystem
 
 ---
 
@@ -128,3 +128,28 @@ add_library( print STATIC
 )
 *target_include_directories( print PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} )
 ```
+
+
+---
+
+# Über Abhängigkeiten
+
+
+* target_link_libraries - Welche Libraries dieses Target braucht
+* target_include_directories - Welch Includes dieses Target braucht
+* target_compile_definitions - Welch Defines dieses Target braucht
+
+
+* PRIVATE - nur für dieses Target
+* INTERFACE - nur für andere Targets, die das Target verwenden.
+* PUBLIC - für beide
+
+_seit CMake 2.8.12_
+
+???
+
+* Besser als include_directories und link_libraries weil die Abhängihkeiten
+  lokal definiert werden.
+* Vor 2.8.12 waren PRIVATE, PUBLIC und INTERFACE komplizierter zu definieren.
+* Kann für Windows DLL import/export genutzt werden;
+  PRIVATE define für dllexport setzen, INTERFACE (oder unset) für dllimport.
