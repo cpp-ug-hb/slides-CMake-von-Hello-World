@@ -1,6 +1,6 @@
 class: center, middle
 
-# CMake von Hello World zum <br> modularen Softwaresystem
+# CMake: Von Hello World zum <br> modularen Softwaresystem
 
 ---
 
