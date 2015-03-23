@@ -225,7 +225,7 @@ install( FILES print.hpp DESTINATION include)
 CMake Config: `PrintConfig.cmake`, `PrintConfigVersion.cmake`, exports
 
 ``` cmake
-*## Generate and install CMake config files
+## Generate and install CMake config files
 include(CMakePackageConfigHelpers)
 
 configure_package_config_file( PrintConfig.cmake.in
@@ -234,7 +234,7 @@ configure_package_config_file( PrintConfig.cmake.in
 
 write_basic_package_version_file(
   "${CMAKE_BINARY_DIR}/PrintConfigVersion.cmake"
-  VERSION 1.0 COMPATIBILITY SameMajorVersion)
+*  VERSION 1.0 COMPATIBILITY SameMajorVersion)
 
 install( FILES
     ${CMAKE_BINARY_DIR}/PrintConfig.cmake
@@ -242,7 +242,7 @@ install( FILES
   DESTINATION lib/Print/cmake
 )
 
-install( EXPORT Print-export DESTINATION lib/Print/cmake)
+*install( EXPORT Print-export DESTINATION lib/Print/cmake)
 ```
 
 ???
