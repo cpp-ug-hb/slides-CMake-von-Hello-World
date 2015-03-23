@@ -157,7 +157,7 @@ _seit CMake 2.8.12_
 
 ---
 
-# Mehrere Projekte (1)
+# Mehrere Projekte - find_package
 
 Aus Ordner `libprint/` wird Projekt `Print`
 * `CMakeLists.txt`
@@ -188,7 +188,7 @@ install( TARGETS hello DESTINATION bin )
 
 ---
 
-# Mehrere Projekte (2)
+# Mehrere Projekte - install
 
 * Include für Export setzen
 * Library Exportieren
@@ -213,9 +213,14 @@ install( FILES print.hpp DESTINATION include)
 
 ```
 
+???
+
+* INSTALL_INTERFACE hinzugefügt, nur aktiv wenn Target installiert und exportiert wurde.
+* install() mit EXPORT, damit target exportiert werden kann.
+
 ---
 
-# Mehrere Projekte (3)
+# Mehrere Projekte - Config und Export
 
 CMake Config: `PrintConfig.cmake`, `PrintConfigVersion.cmake`, exports
 
@@ -239,3 +244,15 @@ install( FILES
 
 install( EXPORT Print-export DESTINATION lib/Print/cmake)
 ```
+
+???
+
+* PrintConfig.cmake generieren, lädt die exportierten targets
+* PrintConfigVersion.cmake generieren, prüft ob die Version kompatibel ist
+* beide und die exports nach `lib/Print/cmake` installieren
+
+---
+
+class: center, middle
+
+# Ende
