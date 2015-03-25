@@ -89,3 +89,25 @@ a, a > code {
 	float: right;
 	padding-top: 1rem;
       }
+
+
+.compactlist {
+  max-width: 90%;
+}
+
+.compactlist li {
+  display: inline;
+  list-style: none;
+}
+
+.compactlist li:after {
+    content: ", ";
+}
+
+.compactlist li:last-child:after {
+    content: "";
+}
+
+.f55 {
+  font-size: 0.55em;
+}
