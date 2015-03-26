@@ -429,6 +429,7 @@ install( FILES
 * Properties
 * Toolchains / Cross-Compilation
 * Platform Checks
+* find_file, find_library and find_program
 * add_custom_target und add_custom_command
 * CCacheFile.txt
 * CDash
@@ -447,8 +448,17 @@ class: center, middle
 
 # Bonus Round
 
----
+.compactlist[
+* [PrintConfig.cmake.in](#PrintConfig)
+* [C++11/14](#cpp11)
+* [ExternalProject](#externalproject)
+* [find_package(*)](#find-modules)
+* [find_package(Boost)](#find-boost)
+* [cmake -E](#cmake-E)
+]
 
+---
+name: PrintConfig
 # PrintConfig.cmake.in
 
 ```cmake
@@ -458,6 +468,7 @@ include(${CMAKE_CURRENT_LIST_DIR}/Print-export.cmake)
 ```
 
 ---
+name: cpp11
 
 # C++ 11/14
 
@@ -482,7 +493,7 @@ http://www.cmake.org/cmake/help/v3.2/manual/cmake-compile-features.7.html
 
 
 ---
-
+name: externalproject
 # Mehrere Projekte Bauen - ExternalProject
 
 ```cmake
@@ -514,7 +525,7 @@ http://www.cmake.org/cmake/help/v3.2/module/ExternalProject.html
 
 
 ---
-
+name: find-modules
 # find_package für externe libraries
 
 Viele Find-Module mit CMake ausgeliefert:
@@ -666,7 +677,7 @@ Viele Find-Module mit CMake ausgeliefert:
 ]
 
 ---
-
+name: find-boost
 # find_package für Boost
 
 * [find_package](http://www.cmake.org/cmake/help/v3.2/command/find_package.html)
@@ -695,6 +706,7 @@ cmake $src   # auto-detect
 ```
 
 ---
+name: cmake-E
 
 # cmake -E
 
