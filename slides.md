@@ -742,6 +742,7 @@ Lizenz</a>.
 
 .left[
 * [remark.js](http://remarkjs.com/) ([GitHub](https://github.com/gnab/remark))
+* [highlight.js](https://highlightjs.org/)
 * Fonts
   * [PT Sans](http://www.google.com/fonts/specimen/PT+Sans)
   * [Yanone Kaffeesatz](http://www.google.com/fonts/specimen/Yanone+Kaffeesatz)
