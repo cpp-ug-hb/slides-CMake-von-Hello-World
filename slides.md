@@ -355,7 +355,7 @@ install( TARGETS hello DESTINATION bin )
 cmake_minimum_required(VERSION 3.0)
 project(Print)
 
-## Build the library
+
 add_library( print STATIC print.cpp print.hpp)
 
 target_include_directories( print
@@ -363,7 +363,7 @@ target_include_directories( print
 * PUBLIC $<INSTALL_INTERFACE:$<INSTALL_PREFIX>/include>
 )
 
-## Install it and the header
+
 install( TARGETS print DESTINATION lib
 * EXPORT Print-export
 )
@@ -383,7 +383,6 @@ install( FILES print.hpp DESTINATION include)
 CMake Config: `PrintConfig.cmake`, `PrintConfigVersion.cmake`, exports
 
 ``` cmake
-## Generate and install CMake config files
 include(CMakePackageConfigHelpers)
 
 configure_package_config_file( PrintConfig.cmake.in
