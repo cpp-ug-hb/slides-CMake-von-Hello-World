@@ -44,6 +44,61 @@ class: center, middle
 
 ---
 
+# CMake Alternativen?
+
+.pull-left[
+## Generatoren
+* Autotools
+* qmake
+* gyp
+]
+.pull-right[
+## All-in-one
+* scons
+* jam
+* waf
+]
+
+.pull-left[
+## Builder
+* make
+* ninja
+* nmake
+* jom
+]
+
+.pull-right[
+## IDEs
+* QtCreator
+* Visual Studio
+* Eclipse
+* CLion
+]
+
+
+???
+
+Generatoren
+* Autotools kann nur Unix und Make
+* QMake kann nur Make
+* gyp ähnliche features wie CMake, verwendet für Google Chrome, V8 (noch)
+
+All-in-one
+* Habe ich wenig mit gearbeitet
+* Jam wird von Boost verwendet.
+
+Builder
+* Wer möchte große Makefiles von Hand schreiben, daher Generatoren
+* Ninja hat das als Philosophie
+
+
+IDEs
+* Portierbare Konfigurationen?
+* Funktioniert nur, wenn alle die gleiche nehmen.
+* Continuous Integration?
+
+---
+
 # CMake mit einer Datei
 
 * `CMakeLists.txt`
