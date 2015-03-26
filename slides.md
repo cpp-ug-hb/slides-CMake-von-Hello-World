@@ -694,6 +694,33 @@ cmake $src
 cmake $src   # auto-detect
 ```
 
+---
+
+# cmake -E
+
+```
+Usage: cmake -E [command] [arguments ...]
+Available commands:
+  chdir dir cmd [args]...
+  compare_files file1 file2
+  copy file destination
+  copy_directory source destination
+  copy_if_different in-file out-file
+  echo [string]...
+  echo_append [string]...
+  env [--unset=NAME]... [NAME=VALUE]... COMMAND [ARG]...
+  environment
+  make_directory dir
+  md5sum file1 [...]
+  remove [-f] file1 file2 ...
+  remove_directory dir
+  rename oldname newname
+  tar [cxt][vf][zjJ] file.tar [file/dir1 file/dir2 ...]
+  sleep <number>...
+  time command [args] ...
+  touch file
+  touch_nocreate file
+```
 
 ---
 
