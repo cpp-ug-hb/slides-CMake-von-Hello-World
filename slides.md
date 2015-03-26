@@ -413,18 +413,27 @@ install( FILES
 
 # Worüber wir nicht gesprochen haben
 
+.pull-left[
 * Testen mit CTest
 * Installer mit CPack
-* CMake ist (auch) eine Scriptsprache
+* CMake die Scriptsprache
 * Shared Libraries
 * Functionen und Module
 * ExternalProject
 * Portable Commands mit `cmake -E`
 * Object Libraries
 * Generator Expressions
+]
+
+.pull-right[
 * Properties
 * Toolchains / Cross-Compilation
 * Platform Checks
+* add_custom_target und add_custom_command
+* CCacheFile.txt
+* CDash
+]
+
 
 ---
 
