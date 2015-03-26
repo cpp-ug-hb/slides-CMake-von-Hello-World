@@ -724,21 +724,21 @@ Available commands:
 
 ---
 
-class: center, middle
+class: center
 
 
-.small[
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-  <img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
-</a><br />
+
+# Ende
+.smaller[
 Dieses Werk von <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Finn Haedicke</span>
 ist lizenziert unter einer <a rel="license"
 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
 Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International
 Lizenz</a>.
 ]
-
-# Ende
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+  <img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+</a>
 
 .left[
 * [remark.js](http://remarkjs.com/) ([GitHub](https://github.com/gnab/remark))

@@ -115,3 +115,7 @@ a, a > code {
 .small {
   font-size: small;
 }
+
+.smaller {
+  font-size: small;
+}
