@@ -667,7 +667,7 @@ Viele Find-Module mit CMake ausgeliefert:
 
 ---
 
-# find_package für externe libraries (1)
+# find_package für Boost
 
 * [find_package](http://www.cmake.org/cmake/help/v3.2/command/find_package.html)
 * [cmake-modules.7](http://www.cmake.org/cmake/help/v3.2/manual/cmake-modules.7.html),
