@@ -657,6 +657,35 @@ Viele Find-Module mit CMake ausgeliefert:
 * FindZLIB
 ]
 
+---
+
+# find_package für externe libraries (1)
+
+* [find_package](http://www.cmake.org/cmake/help/v3.2/command/find_package.html)
+* [cmake-modules.7](http://www.cmake.org/cmake/help/v3.2/manual/cmake-modules.7.html),
+  Beispiel: [Boost](http://www.cmake.org/cmake/help/v3.2/module/FindBoost.html)
+
+```cmake
+find_package( Boost
+  1.57.0 EXACT REQUIRED
+  COMPONENTS thread chrono system
+)
+...
+add_executable(main main.cpp)
+target_include_directories(main PRIVATE )
+target_link_libraries(main PRIVATE
+  ${Boost_THREAD_LIBRARY} ${Boost_CHRONO_LIBRARY} ${Boost_SYSTEM_LIBRARY})
+```
+
+```sh
+cmake -DBOOST_ROOT=$boost $src
+   oder
+export CMAKE_PREFIX_PATH=$boost
+cmake $src
+   oder
+cmake $src   # auto-detect
+```
+
 
 ---
 
