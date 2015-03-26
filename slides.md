@@ -283,7 +283,7 @@ add_library( print STATIC
 
 ---
 
-# Über Abhängigkeiten
+# Target flags
 
 
 * target_link_libraries - Welche Libraries dieses Target braucht
