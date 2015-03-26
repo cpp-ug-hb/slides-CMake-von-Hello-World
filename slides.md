@@ -2,6 +2,13 @@ class: center, middle
 
 # CMake: Von Hello World zum <br> modularen Softwaresystem
 
+Finn Haedicke<br>
+C++ User Group Meeting Bremen - 2015-03-26
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+  <img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+</a>
+
 ---
 
 # Agenda
@@ -655,4 +662,23 @@ Viele Find-Module mit CMake ausgeliefert:
 
 class: center, middle
 
+
+.small[
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+  <img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+</a><br />
+Dieses Werk von <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Finn Haedicke</span>
+ist lizenziert unter einer <a rel="license"
+href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International
+Lizenz</a>.
+]
+
 # Ende
+
+.left[
+* [remark.js](http://remarkjs.com/) ([GitHub](https://github.com/gnab/remark))
+* Fonts
+  * [PT Sans](http://www.google.com/fonts/specimen/PT+Sans)
+  * [Yanone Kaffeesatz](http://www.google.com/fonts/specimen/Yanone+Kaffeesatz)
+]

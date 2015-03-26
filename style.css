@@ -111,3 +111,7 @@ a, a > code {
 .f55 {
   font-size: 0.55em;
 }
+
+.small {
+  font-size: small;
+}
