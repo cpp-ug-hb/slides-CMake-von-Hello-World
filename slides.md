@@ -691,7 +691,7 @@ find_package( Boost
 )
 ...
 add_executable(main main.cpp)
-target_include_directories(main PRIVATE )
+target_include_directories(main PRIVATE ${Boost_INCLUDE_DIRS})
 target_link_libraries(main PRIVATE
   ${Boost_THREAD_LIBRARY} ${Boost_CHRONO_LIBRARY} ${Boost_SYSTEM_LIBRARY})
 ```
@@ -704,6 +704,10 @@ cmake $src
    oder
 cmake $src   # auto-detect
 ```
+???
+
+Alternativ auch `${Boost_LIBRARIES}`
+
 
 ---
 name: cmake-E
