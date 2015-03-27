@@ -9,6 +9,11 @@ C++ User Group Meeting Bremen - 2015-03-26
   <img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
 </a>
 
+
+.small[
+  Hilfe: `?`, Notizen: `p`
+]
+
 ???
 
 # Korrekturen nach dem Talk
