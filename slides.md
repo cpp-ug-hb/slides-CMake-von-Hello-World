@@ -375,10 +375,14 @@ install( FILES print.hpp DESTINATION include)
 
 # Mehrere Projekte - Config und Export
 
-CMake Config: `PrintConfig.cmake`, `PrintConfigVersion.cmake`, exports
-
 ``` cmake
 include(CMakePackageConfigHelpers)
+
+if(UNIX)
+  set(CONFIG_DIR lib/Print/cmake)
+else()
+  set(CONFIG_DIR CMake)
+endif()
 
 configure_package_config_file( PrintConfig.cmake.in
   ${CMAKE_BINARY_DIR}/PrintConfig.cmake
@@ -399,6 +403,8 @@ install( FILES
 
 ???
 
+* unter Linux/Unix und Windows sucht CMake die Paket-Config in
+  unterschiedlichen Verzeichnissen.
 * PrintConfig.cmake generieren, lädt die exportierten targets
 * PrintConfigVersion.cmake generieren, prüft ob die Version kompatibel ist
 * beide und die exports nach `lib/Print/cmake` installieren
@@ -743,7 +749,9 @@ class: center
 # Korrekturen nach dem Talk
 
 * `install( ... INCLUDES DESTINATION )` ist einfacher als target_include_directories
+* Portable installation der CMake files
 * Fehlende Boost_INCLUDE_DIRS hinzugefügt
+
 
 # Ende
 .smaller[
