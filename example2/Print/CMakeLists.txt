@@ -9,18 +9,12 @@ add_library(
   print.hpp
 )
 
-target_include_directories(
-  print
-  PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-  PUBLIC $<INSTALL_INTERFACE:$<INSTALL_PREFIX>/include>
-)
-
-
 ## Install it and the header
 install(
   TARGETS print
-  DESTINATION lib
   EXPORT Print-export
+  DESTINATION lib
+  INCLUDES DESTINATION include
 )
 
 install(
@@ -28,6 +22,11 @@ install(
   DESTINATION include
 )
 
+if(UNIX)
+  set(CONFIG_DIR lib/Print/cmake)
+else()
+  set(CONFIG_DIR CMake)
+endif()
 
 ## Generate and install CMake config files
 include(CMakePackageConfigHelpers)
@@ -35,7 +34,7 @@ include(CMakePackageConfigHelpers)
 configure_package_config_file(
   PrintConfig.cmake.in
   ${CMAKE_CURRENT_BINARY_DIR}/PrintConfig.cmake
-  INSTALL_DESTINATION lib/Print/cmake
+  INSTALL_DESTINATION ${CONFIG_DIR}
 )
 
 write_basic_package_version_file(
@@ -48,7 +47,7 @@ install(
   FILES
     ${CMAKE_CURRENT_BINARY_DIR}/PrintConfig.cmake
     ${CMAKE_CURRENT_BINARY_DIR}/PrintConfigVersion.cmake
-  DESTINATION lib/Print/cmake
+  DESTINATION ${CONFIG_DIR}
 )
 
 install(

@@ -358,14 +358,9 @@ project(Print)
 
 add_library( print STATIC print.cpp print.hpp)
 
-target_include_directories( print
-  PUBLIC $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}>
-* PUBLIC $<INSTALL_INTERFACE:$<INSTALL_PREFIX>/include>
-)
-
-
 install( TARGETS print DESTINATION lib
 * EXPORT Print-export
+* INCLUDES DESTINATION include
 )
 install( FILES print.hpp DESTINATION include)
 
@@ -743,6 +738,12 @@ Available commands:
 class: center
 
 
+---
+
+# Korrekturen nach dem Talk
+
+* `install( ... INCLUDES DESTINATION )` ist einfacher als target_include_directories
+* Fehlende Boost_INCLUDE_DIRS hinzugefügt
 
 # Ende
 .smaller[
