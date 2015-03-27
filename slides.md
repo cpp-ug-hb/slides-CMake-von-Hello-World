@@ -453,7 +453,7 @@ class: center, middle
 * [PrintConfig.cmake.in](#PrintConfig)
 * [C++11/14](#cpp11)
 * [ExternalProject](#externalproject)
-* [find_package(*)](#find-modules)
+* [find_package(...)](#find-modules)
 * [find_package(Boost)](#find-boost)
 * [cmake -E](#cmake-E)
 ]
